@@ -2,7 +2,6 @@ const error = document.getElementById("errorMsg");
 const resultMsg = document.getElementById("decimalOutput");
 
 let array = [];
-let resultList = [];
 let endResult = 0;
 
 function convert() {
@@ -14,6 +13,7 @@ function convert() {
     error.textContent = "Your input can only be 0 or 1!";
     return;
   } else {
+    error.textContent = "";
     array = input.split("");
 
     array.reverse();

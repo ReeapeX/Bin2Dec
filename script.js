@@ -18,7 +18,7 @@ function convert() {
 
     array.reverse();
 
-    for (let index = 1; index < array.length; index++) {
+    for (let index = 0; index < array.length; index++) {
       endResult += array[index] * 2 ** index;
       console.log(index);
     }
